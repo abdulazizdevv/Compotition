@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/pages/order.scss"
-    ],
-    "names": [],
-    "file": "order.css"
-}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"order.css"}
