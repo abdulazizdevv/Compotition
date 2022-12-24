@@ -1,0 +1,26 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/cover";
+@import "./components/dropdown";
+
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar";
+
+@import "./themes/theme";
+
+@import "./vendors/bootstrap";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
