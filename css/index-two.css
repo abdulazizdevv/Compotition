@@ -1,1 +1,18 @@
-/*# sourceMappingURL=index-two.css.map */
+.search__input {
+  width: 600px;
+  height: 66px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+.search::-moz-placeholder {
+  margin-left: 30px;
+}
+.search:-ms-input-placeholder {
+  margin-left: 30px;
+}
+.search::placeholder {
+  margin-left: 30px;
+}/*# sourceMappingURL=index-two.css.map */

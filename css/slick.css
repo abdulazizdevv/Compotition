@@ -9,7 +9,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -31,10 +30,13 @@
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
+=======
+>>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
   transform: translate3d(0, 0, 0);
 }
 

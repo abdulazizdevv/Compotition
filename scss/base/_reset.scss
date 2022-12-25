@@ -1,18 +1,26 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.container {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 120px;
+@font-face {
+    font-family: "Montserrat";
+    src: url(../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-li {
-  list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-a {
-  text-decoration: none;
+
+li{
+    list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Work Sans', sans-serif;

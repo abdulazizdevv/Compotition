@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"index-two.css"}
+=======
+{"version":3,"sources":["../scss/pages/index-two.scss","index-two.css"],"names":[],"mappings":"AACE;EACE,YAAA;EACA,YAAA;EACA,mBAAA;EACA,4CAAA;EACA,oBAAA;EACA,aAAA;EACA,YAAA;ACAJ;ADEA;EACE,iBAAA;ACAF;ADDA;EACE,iBAAA;ACAF;ADDA;EACE,iBAAA;ACAF","file":"index-two.css"}
+>>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd

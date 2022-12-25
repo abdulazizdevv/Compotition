@@ -1,7 +1,24 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
 * {
-  padding: 0;
   margin: 0;
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+>>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
 }
 
 .container {
@@ -11,13 +28,23 @@
   padding: 0 120px;
 }
 
-li {
-  list-style: none;
+@media screen and (max-width: 450px) {
+  .container {
+    max-width: 390px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
 }
-
-a {
-  text-decoration: none;
+.search__input {
+  width: 600px;
+  height: 66px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  outline: none;
+  border: none;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 450px) {
   .container {
@@ -25,4 +52,14 @@ a {
     width: 100% !important;
     padding: 0 16px !important;
   }
+=======
+.search::-moz-placeholder {
+  margin-left: 30px;
+}
+.search:-ms-input-placeholder {
+  margin-left: 30px;
+}
+.search::placeholder {
+  margin-left: 30px;
+>>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
 }/*# sourceMappingURL=main.css.map */
