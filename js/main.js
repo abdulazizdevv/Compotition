@@ -28,7 +28,7 @@ function renderCars(cars) {
   let res = "";
   for (i of cars) {
     res += `
-    <div class="card" style="width: 387px;  background-color: #F5F5F5; ">
+    <div class="card" background-color: #F5F5F5; ">
     <div style="margin-left:24px; padding-top:30px;">
         <h3 class="card-title">${i.name}</h3>
         <p style="margin-top:8px;" class="card-text">${i.type}</p>

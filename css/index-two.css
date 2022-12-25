@@ -61,7 +61,7 @@
 }
 
 .card {
-  width: 387px;
+  max-width: 387px;
   height: 433px;
   margin-bottom: 20px;
   background: #f5f5f5;
@@ -112,7 +112,100 @@
   text-align: center;
 }
 
-.service {
+.cards__service {
+  margin-top: 160px;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
   text-align: center;
+  color: #000000;
+}
+
+.cards p {
+  max-width: 684px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.cards__all {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards__all__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 590px;
+  height: 216px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+
+.cards__all__one:hover {
+  background-color: #299764 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards__all__one:hover p {
+  color: white;
+}
+
+.cards__all__one:hover .icons {
+  -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+          filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+}
+
+.cards__all__one .book {
+  width: 287px;
+  height: 78px;
+  margin-left: 32px;
+  padding-top: 40px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.cards__all__one .Complete {
+  max-width: 354px;
+  height: 48px;
+  margin-left: 32px;
+  margin-top: 50px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.cards__all__one .icons {
+  margin-top: 50px;
+  margin-right: 45px;
+  width: 50px;
+  height: 42px;
 }
 /*# sourceMappingURL=index-two.css.map */

@@ -329,11 +329,30 @@ header {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1070px) {
+  .container {
+    max-width: 880px !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+}
+
+@media screen and (max-width: 822px) {
+  .container {
+    max-width: 780px !important;
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .container {
-    max-width: 390px !important;
+    max-width: 400px !important;
     width: 100% !important;
     padding: 0 16px !important;
+  }
+  .btn2 {
+    font-size: 10px;
   }
 }
 
@@ -470,7 +489,7 @@ header {
 }
 
 .card {
-  width: 387px;
+  max-width: 387px;
   height: 433px;
   margin-bottom: 20px;
   background: #f5f5f5;
@@ -500,9 +519,8 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .view {
@@ -519,5 +537,29 @@ header {
 
 .Btns {
   text-align: center;
+}
+
+.cards__service {
+  margin-top: 160px;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.cards p {
+  max-width: 684px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
 }
 /*# sourceMappingURL=main.css.map */
