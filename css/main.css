@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -26,5 +25,9 @@ a {
     width: 100% !important;
     padding: 0 16px !important;
   }
+<<<<<<< HEAD
 }
 /*# sourceMappingURL=main.css.map */
+=======
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> 3aeb27f14ea12f4e3625c26e1543b8d6cf13337e

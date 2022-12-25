@@ -8,4 +8,20 @@
   outline: none;
   border: none;
 }
+
+.search::-webkit-input-placeholder {
+  margin-left: 30px;
+}
+
+.search:-ms-input-placeholder {
+  margin-left: 30px;
+}
+
+.search::-ms-input-placeholder {
+  margin-left: 30px;
+}
+
+.search::placeholder {
+  margin-left: 30px;
+}
 /*# sourceMappingURL=index-two.css.map */
