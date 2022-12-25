@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+      </div>
     <header id="navbar">
         <div class="container">
             <nav class="navbar">
@@ -426,6 +429,21 @@
                 </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 2000);
+    </script>
+    <script>
+      var loader = document.querySelector(".loader");
+
+      window.addEventListener("load", vanish);
+
+      function vanish() {
+        loader.classList.add("dissapear");
+      }
+    </script>
 
     <script>
         // Hamburger menu toggle
@@ -517,6 +535,7 @@
     <script src="./js/corusel.js"></script>
     <script src="./js/cars.js"></script>
     <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
