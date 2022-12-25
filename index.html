@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
 </head>
 
 <body>
@@ -17,23 +17,24 @@
         <div class="container">
             <nav class="navbar">
                 <div class="navbar__left">
-                    <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
-                    <ul class="navbar__left__ul">
+                    <a href="#"><img src="./images/Logo.svg" alt="Logo" /></a>
+                    <ul class="navbar__left__ul navbar-links">
                         <li class="home"><a href="#categories">Categories</a></li>
                         <div class="dropdown">
-                            <a href="#">About Us <span class="dropdown__item">v</a>
+                            <a href="#">About Us <span class="dropdown__item">v</span></a>
                             <div class="dropdown-content">
-                            <a class="dropdown__inner-item" href="#">News</a>
-                            <a class="dropdown__inner-item" href="#">Careers</a>
-                            <a class="dropdown__inner-item" href="#">Locations</a>
+                                <a class="dropdown__inner-item" href="#">News</a>
+                                <a class="dropdown__inner-item" href="#">Careers</a>
+                                <a class="dropdown__inner-item" href="#">Locations</a>
                             </div>
-                          </div>
-                          <div class="dropdown">
-                            <a href="#">Mouse over me</a>
+                        </div>
+                        <div class="dropdown second">
+                            <a href="#">Help center<span class="dropdown__item">v</span></a>
                             <div class="dropdown-content">
-                            <p>Hello World!</p>
+                                <a class="dropdown__inner-item" href="#">FAQ</a>
+                                <a class="dropdown__inner-item" href="#">Contactus</a>
                             </div>
-                          </div>
+                        </div>
                     </ul>
                 </div>
                 <div class="toggle-button">
@@ -42,9 +43,39 @@
                     <span class="bar bars2"></span>
                 </div>
                 <div class="navbar-links">
-          <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
-          <button class="dark-light"><img class="moon" src="./images/moon.svg" alt="moon"></button>
-          <button class="btn1">Login <img src="./images/Login.png" alt="login"></button>
+                    <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+                    <button class="dark-light">
+                        <img class="moon" src="./images/moon.svg" alt="moon" />
+                    </button>
+                    <button id="myBtn" class="btn1">
+                        Login <img src="./images/Login.png" alt="login" />
+                    </button>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3 class="modal__title">Login</h3>
+                            <p class="modal__desc">
+                                Use the email and password that you login
+                            </p>
+                            <form class="form" action="https://echo.htmlacademy.ru/ " method="post" target="_blank">
+                                <input class="input input1" required type="email" name="email" id="email"
+                                    placeholder="Email" />
+                                <div class="password">
+                                    <input class="input input2" type="password" name="password" id="password"
+                                        placeholder="Password" />
+                                    <img src="./images/Eye.png" alt="show" id="togglePassword" />
+                                </div>
+                                <div>
+                                    <a class="forgot" href="#">Forgot password</a>
+                                    <a class="create" href="#">I want to create an account</a>
+                                    <button type="submit" class="btn1 login">
+                                        Login<img src="./images/Login.png" alt="login" />
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -52,37 +83,69 @@
     <main>
         <section id="hero_section">
             <div class="container">
-                <img style="width: 100%;" src="./images/Malibu.png" alt="">
+                <img style="width: 100%" src="./images/Malibu.png" alt="" />
             </div>
         </section>
 
-        <section id="chooseCar_section">
+        <section id="chooseCar_section"></section>
 
-        </section>
+        <section id="communityCarousel_section"></section>
 
-        <section id="communityCarousel_section">
+        <section id="project_section"></section>
 
-        </section>
+        <section id="server_section"></section>
 
-        <section id="project_section">
-
-        </section>
-
-        <section id="server_section">
-
-        </section>
-
-        <section id="master_section">
-
-        </section>
+        <section id="master_section"></section>
     </main>
 
-
     <footer>
-
+        <div class="container">
+<div class="footer">
+    <div class="footer-left">
+        <div class="footer-left__top">
+            <a href="#"><img src="./images/Logo.svg" alt="logo" /></a>
+            <p class="left-desc">
+                Car rental offers a wide range of cars available for rent in
+                Newark EWR Airport NJ. We pride ourselves in our customer service,
+                and hassle-free renting experience.
+            </p>
+        </div>
+        <div class="footer-left__bottom">
+            <p class="left-last-desc">© 2022 Car rental <br>
+                Terms & Conditions</p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <div class="footer-right__top">
+            <div class="links links1">
+                <h3>Main</h3>
+                <a href="#">My Bookings</a>
+                <a href="#">Reservation</a>
+            </div>
+            <div class="links links2">
+                <h3>Categories</h3>
+                <a href="#">Compact</a>
+                <a href="#">Sports cars</a>
+                <a href="#">Vans</a>
+            </div>
+            <div class="links links3">
+                <h3>Company</h3>
+                <a href="#">About us</a>
+                <a href="#">Sports cars</a>
+                <a href="#">Vans</a>
+            </div>
+            <div class="links links4">
+                <h3>Our Locations</h3>
+                <a href="#">2118 Thornridge Cir. Syracuse</a>
+                <a href="#">4140 Parker Rd. Allentown</a>
+                <a href="#">Vans</a>
+            </div>
+        </div>
+        <div class="footer-right__bottom"></div>
+    </div>
+</div>
+        </div>
     </footer>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- bu onlayn ulanadi agar corusel kerak bolda -->
@@ -92,23 +155,87 @@
 
     <script>
         // Hamburger menu toggle
-        const toggleButton = document.getElementsByClassName('toggle-button')[0]
-        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-        const bar3 = document.querySelector(".bar3")
-        const bars1 = document.querySelector(".bars1")
-        const bars2 = document.querySelector(".bars2")
-        const zIndex = document.querySelectorAll(".edu")
+        const toggleButton = document.getElementsByClassName("toggle-button")[0];
+        const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+        const bar3 = document.querySelector(".bar3");
+        const bars1 = document.querySelector(".bars1");
+        const bars2 = document.querySelector(".bars2");
+        const zIndex = document.querySelectorAll(".edu");
 
-        toggleButton.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active')
-            bar3.classList.toggle('dn')
-            bars1.classList.toggle('brs1')
-            bars2.classList.toggle('brs2')
-            toggleButton.classList.toggle('right')
+        toggleButton.addEventListener("click", () => {
+            navbarLinks.classList.toggle("active");
+            bar3.classList.toggle("dn");
+            bars1.classList.toggle("brs1");
+            bars2.classList.toggle("brs2");
+            toggleButton.classList.toggle("right");
+            toggleButton.classList.toggle("close-toggle");
             for (i of zIndex) {
-                i.classList.toggle('index')
+                i.classList.toggle("index");
             }
-        })
+        });
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        span.onclick = function () {
+            modal.style.display = "none";
+            input = document.querySelectorAll(".input");
+            input.forEach((el) => {
+                el.classList.add("pl");
+                el.value = "";
+            });
+        };
+
+        const input = document.querySelectorAll(".input");
+        const loginBtn = document.querySelector(".login");
+        const input2 = document.querySelectorAll(".input2");
+
+        input.forEach((el) => {
+            el.classList.add("pl");
+        });
+        loginBtn.addEventListener("click", () => {
+            if (input2.value <= 8) {
+                window.alert("kam");
+                loginBtn.style.display = "none";
+            }
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            const type =
+                password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            this.classList.toggle("bi-eye");
+        });
+
+        // Navbar Shrink
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 150) {
+                document.getElementById("navbar").classList.add("navbar-shrink");
+            } else {
+                document.getElementById("navbar").classList.remove("navbar-shrink");
+            }
+        }
     </script>
 </body>
 
