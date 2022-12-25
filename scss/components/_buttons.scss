@@ -1,0 +1,40 @@
+@import "../abstracts/variables";
+
+.btn1 {
+  background: #299764;
+  padding: 18px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn2 {
+  padding: 19px 40px;
+  height: 58px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: 1.5px solid #e5e7ea;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    transition: $transition-time;
+    background: #299764;
+    color: white;
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+.active {
+  transition: $transition-time;
+  background: #299764;
+  color: white;
+}

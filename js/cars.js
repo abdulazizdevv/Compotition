@@ -1,5 +1,6 @@
 let cars = [
   {
+    compacts: "compact",
     img: "../images/car1.png",
     name: "Ford Fiesta",
     type: "Economy Car",
@@ -9,6 +10,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    compacts: "compact",
     img: "../images/car2.png",
     name: "Nissan Versa",
     type: "Compact Car",
@@ -18,6 +20,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    compacts: "compact",
     name: "Toyota Corolla",
     type: "Mid-size Car",
     img: "../images/car3.png",
@@ -27,6 +30,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    compacts: "compact",
     name: "Nissan Rogue",
     type: "Mid-size SUV",
     img: "../images/car4.png",
@@ -36,6 +40,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    compacts: "compact",
     name: "Chevy Traverse",
     type: "Full-size SUV ",
     img: "../images/car5.png",
@@ -45,6 +50,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    compacts: "compact",
     name: "Nissan Altima",
     type: "Full-size Car",
     img: "../images/car6.png",
@@ -54,6 +60,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    sport: "sport",
     name: "Royce rolls ghost",
     type: "Full-size Car",
     img: "../images/car7.png",
@@ -63,6 +70,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    sport: "sport",
     name: "Mercedes s class",
     type: "Full-size Car",
     img: "../images/car8.png",
@@ -72,6 +80,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    sport: "sport",
     name: "Lamborghini urus",
     type: "Mid-size Car",
     img: "../images/car9.png",
@@ -81,6 +90,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    sport: "sport",
     name: "Mercedes g63 amg",
     type: "Mid-size SUV",
     img: "../images/car10.png",
@@ -91,6 +101,7 @@ let cars = [
   },
 
   {
+    vans:"vans",
     name: "15-Passenger Ford Transit ",
     type: "Full-size Car",
     img: "../images/car11.png",
@@ -100,6 +111,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    vans:"vans",
     name: "Chrysler Pacifica",
     type: "Full-size Car",
     img: "../images/car12.png",
@@ -109,6 +121,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    vans:"vans",
     name: "Chevy Silverado 4500HD",
     type: "Mid-size Car",
     img: "../images/car13.png",
@@ -118,6 +131,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    vans:"vans",
     name: "12-Passenger Ford Transit",
     type: "Mid-size SUV",
     img: "../images/car14.png",
@@ -127,6 +141,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    vans:"vans",
     name: "15-Passenger Ford Transit ",
     type: "Mid-size SUV",
     img: "../images/car15.png",
@@ -136,6 +151,7 @@ let cars = [
     imgOil: "../images/oil.png",
   },
   {
+    vans:"vans",
     name: "Mercedes-Benz Sprinter",
     type: "Mid-size SUV",
     img: "../images/car16.png",
