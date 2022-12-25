@@ -15,15 +15,12 @@ elBtns.addEventListener("click", (evt) => {
   const newBg = theme ? "dark" : "light";
   window.localStorage.setItem("theme", newBg);
   newTheme();
-
 });
 
 let newTheme = () => {
   if (window.localStorage.getItem("theme") == "dark") {
     document.body.classList.add("dark");
-    elcard.classList.add("dark")
   } else {
-    elcard.classList.remove("dark")
     document.body.classList.remove("dark");
   }
 };
