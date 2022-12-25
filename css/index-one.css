@@ -1,1 +1,56 @@
-/*# sourceMappingURL=index-one.css.map */
+.corusel_slik-div {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/Malibu.png);
+  background-size: cover;
+  background-position: center;
+}
+.corusel_slik-div h3 {
+  padding-top: 60px;
+  height: 44px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-bottom: 10px;
+}
+.corusel_slik-div p {
+  height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding-top: 10px;
+}
+
+.hero_bg-line {
+  background: linear-gradient(180deg, rgba(189, 33, 33, 0.6) 6.19%, rgba(148, 27, 27, 0) 54.63%);
+}
+
+.corusel_bg2 {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/sportcarHero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.corusel_bg3 {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/vanscarHero.png);
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=index-one.css.map */
