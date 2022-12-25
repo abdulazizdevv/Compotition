@@ -4,13 +4,8 @@
 }
 
 .search {
-<<<<<<< HEAD
-=======
   margin-top: -30px;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 4f7f4308f3db121d56cf9332b4ed8afbd69dd376
   display: flex;
   justify-content: center;
 }
@@ -599,4 +594,8 @@
   flex-grow: 0;
   padding-top: 160px;
   margin-bottom: 34px;
+}
+
+.project__corusel_toleft li {
+  margin-left: 20px;
 }/*# sourceMappingURL=home.css.map */
