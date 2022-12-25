@@ -9,37 +9,50 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .corusel_slik-div h3 {
   padding-top: 60px;
   height: 44px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
   text-align: center;
   color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
   padding-bottom: 10px;
 }
+
 .corusel_slik-div p {
   height: 40px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  padding-top: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  padding-top: 40px;
 }
 
 .hero_bg-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.19%, rgba(189, 33, 33, 0.6)), color-stop(54.63%, rgba(148, 27, 27, 0)));
   background: linear-gradient(180deg, rgba(189, 33, 33, 0.6) 6.19%, rgba(148, 27, 27, 0) 54.63%);
 }
 
@@ -57,4 +70,370 @@ body {
   background-image: url(../images/vanscarHero.png);
   background-size: cover;
   background-position: center;
-}/*# sourceMappingURL=index-one.css.map */
+}
+
+#communityCarousel_section {
+  background: #F5F5F5;
+}
+
+.communityCarousel_container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.community_box {
+  background: #FFFFFF;
+  border-radius: 20px;
+  max-width: 1200px;
+  min-height: 479px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comumunity_left-container {
+  padding: 70px;
+}
+
+.comumunity_left-container h4 {
+  width: 320px;
+  height: 150px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin-bottom: 30px;
+}
+
+.google_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.line_span {
+  max-width: 330px;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(19.83%, #EA4335), color-stop(65%, #FBBC05), color-stop(82.29%, #34A853), to(#4285F4));
+  background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.instagram_div p {
+  margin-top: 30px;
+  width: 330px;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.instagram_div button {
+  margin-top: 16px;
+  padding: 18px 50px;
+  border: 1.5px solid black;
+  border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.instagram_div button:hover {
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  color: #fff !important;
+  z-index: 999;
+}
+
+.comumunity_carusel-container {
+  max-width: 730px;
+  height: 479px;
+  background: #299764;
+}
+
+.community-corusels {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.for-pd {
+  padding-left: 20px !important;
+}
+
+.community-corusel-ava {
+  margin-top: 50px;
+  margin-left: 40px;
+  padding: 24px;
+  width: 420px;
+  height: 333px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.person_gmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-gmail h5 {
+  width: 151px;
+  height: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+}
+
+.com__carusel-pr {
+  width: 372px;
+  height: 160px;
+  left: 24px;
+  top: 80px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.corusel__line {
+  margin-top: 25px;
+  width: 372px;
+  height: 0px;
+  border: 1.5px solid #E5E7EA;
+}
+
+.star {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.from_left-text a {
+  color: #4285F4;
+}
+
+@media screen and (max-width: 1200px) {
+  .community_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comumunity_left-container {
+    padding: 70px;
+  }
+  .comumunity_left-container h4 {
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 310px;
+    height: 72px;
+  }
+  .comumunity_left-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .line_span {
+    position: absolute;
+    left: calc(50% + 1px);
+    width: 2px;
+    height: 108px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(19.83%, #EA4335), color-stop(65%, #FBBC05), color-stop(82.29%, #34A853), to(#4285F4));
+    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  }
+  .instagram_div {
+    max-width: 275px;
+  }
+  .comumunity_carusel-container {
+    max-width: 100%;
+    height: 479px;
+    background: #299764;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .community-corusel-ava {
+    margin-top: 30px;
+    margin-left: 24px;
+    padding: 24px;
+    width: 420px;
+    height: 333px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+  .instagram_div p {
+    width: 275px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .instagram_div button:hover {
+    background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+    color: #fff !important;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .comumunity_left-container h4 {
+    max-width: 280px;
+    height: 72px;
+    line-height: 30px;
+  }
+  .line_span {
+    position: absolute;
+    left: calc(50% - 5px);
+    width: 2px;
+    height: 108px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(19.83%, #EA4335), color-stop(65%, #FBBC05), color-stop(82.29%, #34A853), to(#4285F4));
+    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comumunity_left-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .line_span {
+    max-width: 330px !important;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(19.83%, #EA4335), color-stop(65%, #FBBC05), color-stop(82.29%, #34A853), to(#4285F4));
+    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .community-corusel-ava {
+    margin-top: 20px;
+    margin-left: 16px;
+    padding: 24px;
+    max-width: 326px !important;
+    height: 380px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+}
+
+.project-text {
+  width: 340px;
+  height: 29px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  padding-top: 160px;
+  margin-bottom: 34px;
+}
+/*# sourceMappingURL=index-one.css.map */
