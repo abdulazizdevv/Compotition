@@ -62,7 +62,7 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   min-width: 140px;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -77,13 +77,61 @@ a {
   flex-direction: column;
 }
 
+footer {
+  border-top: 1.5px solid #e5e7ea;
+  padding-top: 40px;
+}
+
+.footer {
+  display: flex;
+  gap: 65px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+.footer-left .left-desc {
+  max-width: 240px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555555;
+  padding-top: 20px;
+}
+.footer-left .left-last-desc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding-top: 84px;
+}
+
+.footer-right {
+  display: flex !important;
+  flex-direction: column;
+}
+.footer-right__top {
+  display: flex;
+  gap: 100px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.links h3 {
+  padding-bottom: 5px;
+}
+
 header {
   top: 0;
   background: #fff;
   position: -webkit-sticky;
   position: sticky;
   transition: 0.5s;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 
 .navbar {
@@ -163,8 +211,8 @@ header {
   }
 }
 .navbar-shrink {
-  box-shadow: 0 0 5px #c8c8c8;
-  padding: 5px 0 !important;
+  box-shadow: 0 0 5px rgb(68, 68, 68) !important;
+  padding: 10px 0 !important;
 }
 
 @media screen and (min-width: 100px) {
@@ -256,7 +304,7 @@ header {
 }
 
 .input {
-  min-width: 520px;
+  min-width: 500px;
   margin: 0 auto !important;
   padding: 18px 0;
   border: 1.5px solid #E5E7EA;
@@ -269,6 +317,26 @@ header {
   gap: 15px;
   flex-direction: column;
   align-items: center;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1.5px solid #E5E7EA;
+  border-radius: 82px;
+}
+.password img {
+  position: absolute;
+  right: 65px;
+}
+.password .input {
+  outline: none;
+  margin-left: 30px;
+  border: none;
+  width: 100%;
 }
 
 .pl {
@@ -284,10 +352,37 @@ header {
   border-radius: 20px;
   width: 590px;
   margin: 0 auto;
-  transform: translate(0%, 100%) !important;
+  transform: translate(0%, 40%) !important;
 }
 
-/* The Close Button */
+.forgot {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  padding-top: 8px;
+  display: block;
+  text-align: right !important;
+  padding-right: 20px;
+}
+
+.create {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 32px;
+}
+
+.login {
+  min-width: 520px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
