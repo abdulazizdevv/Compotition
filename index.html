@@ -13,10 +13,28 @@
 </head>
 
 <body>
-
-    <header>
-
-    </header>
+    <header id="navbar">
+        <div class="container-sm">
+          <nav class="navbar">
+            <div class="brand-title">Portfolio Creator</div>
+            <div class="toggle-button">
+              <span class="bar bar3"></span>
+              <span class="bar bars1"></span>
+              <span class="bar bars2"></span>
+            </div>
+            <div class="navbar-links">
+              <ul class="ul">
+                <li class="home"><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonial">Testmonial</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <main>
         <section id="hero_section">
             <div class="container">
@@ -57,6 +75,27 @@
     <script src="./slick-1.8.1/slick/slick.js"></script>
     <script src="./js/corusel.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        // Hamburger menu toggle
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const bar3 = document.querySelector(".bar3")
+const bars1 = document.querySelector(".bars1")
+const bars2 = document.querySelector(".bars2")
+const zIndex = document.querySelectorAll(".edu")
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+  bar3.classList.toggle('dn')
+  bars1.classList.toggle('brs1')
+  bars2.classList.toggle('brs2')
+  toggleButton.classList.toggle('right')
+  for(i of zIndex){
+    i.classList.toggle('index')
+  }
+})
+    </script>
 </body>
 
 </html>
