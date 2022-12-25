@@ -18,7 +18,7 @@
             <nav class="navbar">
                 <div class="navbar__left">
                     <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
-                    <ul class="navbar__left__ul">
+                    <ul class="navbar__left__ul navbar-links">
                         <li class="home"><a href="#categories">Categories</a></li>
                         <div class="dropdown">
                             <a href="#">About Us <span class="dropdown__item">v</span></a>
@@ -29,10 +29,10 @@
                             </div>
                           </div>
                           <div class="dropdown second">
-                            <a href="#">Help center <span class="dropdown__item">v</span></a>
+                            <a href="#">Help center<span class="dropdown__item">v</span></a>
                             <div class="dropdown-content">
                             <a class="dropdown__inner-item" href="#">FAQ</a>
-                            <a class="dropdown__inner-item" href="#">Contact us</a>
+                            <a class="dropdown__inner-item" href="#">Contactus</a>
                             </div>
                           </div>
                     </ul>
@@ -45,7 +45,23 @@
                 <div class="navbar-links">
           <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
           <button class="dark-light"><img class="moon" src="./images/moon.svg" alt="moon"></button>
-          <button class="btn1">Login <img src="./images/Login.png" alt="login"></button>
+          <button id="myBtn" class="btn1">Login <img src="./images/Login.png" alt="login"></button>
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="modal__title">Login</h3>
+              <p class="modal__desc">Use the email and password that you login</p>
+                <form class="form" action="https://echo.htmlacademy.ru/ " method="post" target="_blank">
+                    <input class="input input1" required type="email" placeholder="Email">
+                    <div class="password">
+                        <input class="input input2" type="password" name="password" id="password" placeholder="Password"/>
+                        <img src="./images/Eye.png" alt="show" id="togglePassword">
+                    </div>
+                </form>
+            </div>
+          </div>
                 </div>
             </nav>
         </div>
@@ -106,10 +122,41 @@
             bars1.classList.toggle('brs1')
             bars2.classList.toggle('brs2')
             toggleButton.classList.toggle('right')
+            toggleButton.classList.toggle("close-toggle")
             for (i of zIndex) {
                 i.classList.toggle('index')
             }
         })
+
+        var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+input = document.querySelectorAll(".input")
+input.forEach(el => {
+    el.classList.add("pl")
+});
     </script>
 </body>
 
