@@ -242,7 +242,6 @@ footer {
 }
 
 .links a:hover {
-  border-bottom: 1px solid black;
   transition: 0.5s;
   cursor: url(../../images/cursor.svg), auto;
 }
@@ -592,8 +591,8 @@ header {
   border-radius: 20px;
   width: 590px;
   margin: 0 auto;
-  -webkit-transform: translate(0%, 40%) !important;
-          transform: translate(0%, 40%) !important;
+  /* -webkit-transform: translate(0%, 40%) !important; */
+          /* transform: translate(0%, 40%) !important; */
 }
 
 .forgot {
