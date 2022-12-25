@@ -35,6 +35,43 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: 0.5s;
+}
+.btn1:hover {
+  background: #077743 !important;
+}
+.btn1:active {
+  background: #F5F5F5 !important;
+  color: black !important;
+}
+.btn1:active img {
+  filter: invert(0%) sepia(5%) saturate(0%) hue-rotate(302deg) brightness(9%) contrast(104%) !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown__item {
+  font-size: 12px;
+}
+.dropdown:hover__item {
+  content: "m" !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -143,31 +180,6 @@ header {
   z-index: -99999 !important;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown__item {
-  font-size: 12px;
-}
-.dropdown:hover__item {
-  transform: rotate(180deg);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .tel {
   color: black !important;
   font-size: 18px;
@@ -180,10 +192,10 @@ header {
   background: #F5F5F5;
   border: none;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 1s;
 }
 .dark-light:hover img {
-  filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(111%) contrast(100%);
+  filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%);
   transition: 0.5s;
 }
 .dark-light:active {

@@ -1,3 +1,4 @@
+@import "../abstracts/variables";
 .btn1{
 background: #299764;
 padding: 18px 20px;
@@ -9,4 +10,15 @@ font-size: 18px;
 display: flex;
 align-items: center;
 gap: 8px;
+transition: $transition-time;
+&:hover{
+    background: #077743 !important;
+}
+&:active{
+    background: #F5F5F5 !important;
+    color: black !important;
+    & img{
+     filter: invert(0%) sepia(5%) saturate(0%) hue-rotate(302deg) brightness(9%) contrast(104%) !important;
+    }
+}
 }
