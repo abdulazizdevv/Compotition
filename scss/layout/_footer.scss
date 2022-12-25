@@ -1,15 +1,16 @@
 footer {
     border-top: 1.5px solid #e5e7ea;
     padding-top: 40px;
+    z-index: 999999999999999999 !important;
 }
 
 .footer {
-    display: flex;
+    display: flex !important;
     gap: 65px;
 }
 
 .footer-left {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 
     & .left-desc {
@@ -35,12 +36,12 @@ footer {
     flex-direction: column;
 
     &__top {
-        display: flex;
+        display: flex !important;
         gap: 100px;
     }
 
     &__bottom {
-        display: flex;
+        display: flex !important;
         gap: 100px;
         padding-top: 40px;
 
@@ -48,13 +49,13 @@ footer {
 }
 
 .socials{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 20px;
 }
 
 .links {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 12px;
 
