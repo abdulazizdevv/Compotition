@@ -38,12 +38,19 @@ footer {
         display: flex;
         gap: 100px;
     }
+
     &__bottom {
         display: flex;
         gap: 100px;
-    padding-top: 40px;
+        padding-top: 40px;
 
     }
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .links {
@@ -54,17 +61,68 @@ footer {
     & h3 {
         padding-bottom: 5px;
     }
+
+    & a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #555555;
+        padding-bottom: 10px;
+        // min-width: 35px;
+        // width: 100%;
+
+        &:hover {
+            font-size: 15px;
+            transition: 0.5s;
+            cursor: url(../../images/cursor.svg), auto;
+        }
+    }
 }
 
-.links a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #555555;
-    padding-bottom: 10px;
-    display: inline !important;
+.social {
+    display: flex !important;
+    gap: 15px;
 
-    &:hover {
-        border-bottom: 1px solid black;
+    &__item {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #000000;
+        border-radius: 500px;
+        width: 40px;
+        height: 40px;
         transition: 0.5s;
+    }
+    & .first:hover{
+        background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%) !important;
+    }
+    & .second:hover{
+        background: #55ACE3 !important;
+    }
+    & .third:hover{
+        background: #0B84EE !important;
+    }
+    & .fourth:hover{
+        background: #48C95F !important;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-left {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+    .footer-right__top{
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+    .footer-right__bottom{
+        flex-wrap: wrap !important;
+        justify-content: center;
+    }
+    .social{
+        padding-bottom: 25px;
     }
 }
