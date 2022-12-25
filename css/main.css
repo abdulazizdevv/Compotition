@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
 @media screen and (max-width: 450px) {
   .container {
     max-width: 390px !important;
