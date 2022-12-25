@@ -1,0 +1,11 @@
+.search__input {
+  width: 600px;
+  height: 66px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=index-two.css.map */
