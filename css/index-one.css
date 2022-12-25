@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 .corusel_slik-div {
   max-width: 1200px;
   height: 500px;
@@ -32,7 +36,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .hero_bg-line {
@@ -53,4 +57,99 @@
   background-image: url(../images/vanscarHero.png);
   background-size: cover;
   background-position: center;
+}
+
+#communityCarousel_section {
+  background: #F5F5F5;
+}
+
+.communityCarousel_container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.community_box {
+  background: #FFFFFF;
+  border-radius: 20px;
+  max-width: 1200px;
+  min-height: 479px;
+  display: flex;
+}
+
+.comumunity_left-container {
+  padding: 70px;
+}
+.comumunity_left-container h4 {
+  width: 320px;
+  height: 150px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-bottom: 30px;
+}
+
+.google_link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.line_span {
+  max-width: 330px;
+  height: 2px;
+  background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.instagram_div p {
+  margin-top: 30px;
+  width: 330px;
+  height: 17px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.instagram_div button {
+  margin-top: 16px;
+  padding: 18px 50px;
+  border: 1.5px solid black;
+  border-radius: 100px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.instagram_div button:hover {
+  background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  color: #fff !important;
+  z-index: 999;
+}
+
+.communityCarousel_container {
+  width: 730px;
+  height: 479px;
+  background: #299764;
 }/*# sourceMappingURL=index-one.css.map */
