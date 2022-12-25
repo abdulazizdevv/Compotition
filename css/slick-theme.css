@@ -25,11 +25,8 @@
   background: transparent;
   color: transparent;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
-=======
->>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
   transform: translate(0, -50%);
   padding: 0;
   border: none;

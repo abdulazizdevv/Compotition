@@ -98,13 +98,13 @@
 .slick-next
 {
     right: 40px;
-    top: calc(100% - 40px);
+    bottom: 40px;
 }
 .slick-prev
 {
     z-index: 999;
     right: 80px;
-    top: calc(100% - 40px);
+    bottom: 40px;
 }
 [dir='rtl'] .slick-next
 {
