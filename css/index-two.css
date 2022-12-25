@@ -67,13 +67,47 @@
   border-radius: 16px;
 }
 
+.card:hover {
+  background-color: #299764 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover h3,
+.card:hover h6,
+.card:hover p {
+  color: white;
+}
+
+.card:hover .card-img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(104%) contrast(107%);
+          filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(104%) contrast(107%);
+}
+
 .cars__List {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.view {
+  padding: 18px 30px;
+  width: 173px;
+  height: 58px;
+  margin: 0 auto;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background: #299764;
+  border-radius: 100px;
+}
+
+.Btns {
+  text-align: center;
 }
 /*# sourceMappingURL=index-two.css.map */
