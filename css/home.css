@@ -230,6 +230,7 @@
 }
 .big__txt .category__box1 .every {
   margin: 30px 15px;
+  color: black;
 }
 .big__txt .category__box1 .chemical {
   margin-top: 24px;
@@ -257,7 +258,7 @@
 }
 
 .corusel_slik-div {
-  max-width: 1200px;
+  max-width: 100%;
   height: 500px;
   background-image: url(../images/Malibu.png);
   background-size: cover;
@@ -298,7 +299,7 @@
 }
 
 .corusel_bg2 {
-  max-width: 1200px;
+  max-width: 100%;
   height: 500px;
   background-image: url(../images/sportcarHero.png);
   background-size: cover;
@@ -306,7 +307,7 @@
 }
 
 .corusel_bg3 {
-  max-width: 1200px;
+  max-width: 100%;
   height: 500px;
   background-image: url(../images/vansHero.png);
   background-size: cover;
