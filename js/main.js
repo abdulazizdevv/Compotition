@@ -6,15 +6,15 @@ let elVans = document.querySelector(".js-vans");
 let elSport = document.querySelector(".js-sport");
 let elView = document.querySelector(".view");
 let elBtns = document.querySelector(".dark-light");
+let elcard = document.querySelectorAll(".cards__all__one");
 
 let theme = false;
 
-elBtns.addEventListener("click", () => {
+elBtns.addEventListener("click", (evt) => {
   theme = !theme;
   const newBg = theme ? "dark" : "light";
   window.localStorage.setItem("theme", newBg);
   newTheme();
-  
 });
 
 let newTheme = () => {

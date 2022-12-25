@@ -127,3 +127,13 @@ footer {
         padding-bottom: 25px;
     }
 }
+
+@media screen and (max-width:600px) {
+    .footer-right__top{
+flex-direction: column !important;
+    }
+    .footer-right__bottom{
+        flex-direction: column !important;
+
+    }
+}
