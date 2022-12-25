@@ -13,9 +13,41 @@
 </head>
 
 <body>
-
-    <header>
-
+    <header id="navbar">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
+                    <ul class="navbar__left__ul">
+                        <li class="home"><a href="#categories">Categories</a></li>
+                        <div class="dropdown">
+                            <a href="#">About Us <span class="dropdown__item">v</a>
+                            <div class="dropdown-content">
+                            <a class="dropdown__inner-item" href="#">News</a>
+                            <a class="dropdown__inner-item" href="#">Careers</a>
+                            <a class="dropdown__inner-item" href="#">Locations</a>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <a href="#">Mouse over me</a>
+                            <div class="dropdown-content">
+                            <p>Hello World!</p>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+                <div class="toggle-button">
+                    <span class="bar bar3"></span>
+                    <span class="bar bars1"></span>
+                    <span class="bar bars2"></span>
+                </div>
+                <div class="navbar-links">
+          <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+          <button class="dark-light"><img class="moon" src="./images/moon.svg" alt="moon"></button>
+          <button class="btn1">Login <img src="./images/Login.png" alt="login"></button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="hero_section">
@@ -45,7 +77,7 @@
         </section>
     </main>
 
-    
+
     <footer>
 
     </footer>
@@ -57,6 +89,27 @@
     <script src="./slick-1.8.1/slick/slick.js"></script>
     <script src="./js/corusel.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        // Hamburger menu toggle
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        const bar3 = document.querySelector(".bar3")
+        const bars1 = document.querySelector(".bars1")
+        const bars2 = document.querySelector(".bars2")
+        const zIndex = document.querySelectorAll(".edu")
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            bar3.classList.toggle('dn')
+            bars1.classList.toggle('brs1')
+            bars2.classList.toggle('brs2')
+            toggleButton.classList.toggle('right')
+            for (i of zIndex) {
+                i.classList.toggle('index')
+            }
+        })
+    </script>
 </body>
 
 </html>

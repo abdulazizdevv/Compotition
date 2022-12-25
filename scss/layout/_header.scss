@@ -1,0 +1,140 @@
+@import "../abstracts/variables";
+
+header {
+    top: 0;
+    background: #fff;
+    position: sticky;
+    transition: $transition-time;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        &__ul{
+            display: flex;
+            & a{
+                color: black;
+                font-size: 18px;
+                border-radius: 100px;
+                padding: 16px 18px;
+                transition: $transition-time;
+                &:hover{
+                    background: #F5F5F5;
+                }
+            }
+        }
+    }
+}
+
+.navbar-links {
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 25px;
+    right: 0.1rem;
+    display: none !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    transition: $transition-time;
+}
+
+.bar {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.toggle-button .bar::after {
+    display: none !important;
+}
+
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex !important;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+}
+
+.navbar-shrink {
+    box-shadow: 0 0 5px  #c8c8c8;
+    padding: 5px 0 !important;
+  }
+  
+  @media screen and (min-width:100px) {
+      .dn{
+display: none;
+    }
+    .right{
+        margin-right: 40px;
+    }
+   .brs1{
+transform: rotate(45deg) translate(11px,20px);
+   }
+   .brs2{
+transform: rotate(-45deg) translate(-8px)
+
+   }
+    }
+
+    .index{
+        z-index: -99999 !important;
+    }
+      .tel{
+        color: black !important;
+        font-size: 18px;
+    }
+
+    .dark-light{
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background: #F5F5F5;
+        border: none;
+        cursor: pointer;
+        transition: $transition-slow;
+        &:hover{
+            & img{
+                filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%);
+        transition: $transition-time;
+            }
+        }
+        &:active{
+            background: #299764;
+            & img {
+                filter: invert(100%) sepia(79%) saturate(2%) hue-rotate(131deg) brightness(127%) contrast(100%);;
+                fill: #fff;
+        transition: $transition-time;
+            }
+        }
+    }
