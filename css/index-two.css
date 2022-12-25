@@ -1,4 +1,13 @@
-.search__input {
+.search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search__form__input {
   width: 600px;
   height: 66px;
   background: #ffffff;
@@ -9,19 +18,13 @@
   border: none;
 }
 
-.search::-webkit-input-placeholder {
-  margin-left: 30px;
-}
-
-.search:-ms-input-placeholder {
-  margin-left: 30px;
-}
-
-.search::-ms-input-placeholder {
-  margin-left: 30px;
-}
-
-.search::placeholder {
-  margin-left: 30px;
+.search__form ::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
+  padding-left: 30px;
 }
 /*# sourceMappingURL=index-two.css.map */
