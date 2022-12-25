@@ -5,6 +5,27 @@ let elCompact = document.querySelector(".js-compact");
 let elVans = document.querySelector(".js-vans");
 let elSport = document.querySelector(".js-sport");
 let elView = document.querySelector(".view");
+let elBtns = document.querySelector(".dark-light");
+
+let theme = false;
+
+elBtns.addEventListener("click", () => {
+  theme = !theme;
+  const newBg = theme ? "dark" : "light";
+  window.localStorage.setItem("theme", newBg);
+  newTheme();
+  
+});
+
+let newTheme = () => {
+  if (window.localStorage.getItem("theme") == "dark") {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+};
+
+newTheme();
 
 elSearch.addEventListener("input", (evt) => {
   evt.preventDefault();
@@ -101,12 +122,6 @@ elAllBtns.addEventListener("click", (evt) => {
   }
 });
 
-
-
-
-
-
-
 // let elList = document.querySelector(".carsList");
 // let elAllBtns = document.querySelector(".js-btns");
 // let elSearch = document.querySelector(".js-input");
@@ -118,7 +133,7 @@ elAllBtns.addEventListener("click", (evt) => {
 // elSearch.addEventListener("input", (evt) => {
 //   evt.preventDefault();
 //   newArr = [];
-  
+
 //   let inputVal = elSearch.value;
 
 //   cars.forEach((el) => {
@@ -168,7 +183,7 @@ elAllBtns.addEventListener("click", (evt) => {
 //       </div>
 //   </div>
 // </div>
-    
+
 //         `;
 //   }
 
