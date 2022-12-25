@@ -6,6 +6,7 @@ header {
     position: sticky;
     transition: $transition-time;
     padding: 25px 0;
+    z-index: 999999999 !important;
 }
 
 .navbar {
