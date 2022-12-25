@@ -3,7 +3,7 @@ footer {
     padding-top: 40px;
 }
 
-.footer{
+.footer {
     display: flex;
     gap: 65px;
 }
@@ -22,7 +22,7 @@ footer {
     }
 
     & .left-last-desc {
-        font-weight:600;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         color: #000000;
@@ -33,17 +33,38 @@ footer {
 .footer-right {
     display: flex !important;
     flex-direction: column;
-    &__top{
+
+    &__top {
         display: flex;
         gap: 100px;
     }
+    &__bottom {
+        display: flex;
+        gap: 100px;
+    padding-top: 40px;
+
+    }
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    & h3{
+
+    & h3 {
         padding-bottom: 5px;
+    }
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555555;
+    padding-bottom: 10px;
+    display: inline !important;
+
+    &:hover {
+        border-bottom: 1px solid black;
+        transition: 0.5s;
     }
 }

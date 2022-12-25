@@ -157,6 +157,11 @@ footer {
   display: flex;
   gap: 100px;
 }
+.footer-right__bottom {
+  display: flex;
+  gap: 100px;
+  padding-top: 40px;
+}
 
 .links {
   display: flex;
@@ -167,6 +172,18 @@ footer {
   padding-bottom: 5px;
 }
 
+.links a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #555555;
+  padding-bottom: 10px;
+  display: inline !important;
+}
+.links a:hover {
+  border-bottom: 1px solid black;
+  transition: 0.5s;
+}
+
 header {
   top: 0;
   background: #fff;
@@ -174,6 +191,7 @@ header {
   position: sticky;
   transition: 0.5s;
   padding: 25px 0;
+  z-index: 999999999 !important;
 }
 
 .navbar {
