@@ -6,7 +6,6 @@ header {
     position: sticky;
     transition: $transition-time;
     padding: 15px 0;
-
 }
 
 .navbar {
@@ -14,39 +13,29 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-}
-
-.brand-title {
-    font-size: 22px;
-    font-weight: 700;
-    padding: 25px;
-}
-
-.navbar-links {
-    & ul {
+    &__left{
         display: flex;
-        padding: 0;
-
-        & li {
-            list-style: none;
-            padding: 0 25px;
-
-            & a {
-            transition: $transition-time !important;
-                color: dimgray;
-
-                &:hover {
-                    color: black;
-                    font-size: 17px;
-                    padding-bottom: 5px;
-                    border-bottom: 1px solid black;
-
+        align-items: center;
+        gap: 36px;
+        &__ul{
+            display: flex;
+            & a{
+                color: black;
+                font-size: 18px;
+                border-radius: 100px;
+                padding: 16px 18px;
+                &:hover{
+                    background: #F5F5F5;
                 }
             }
         }
     }
 }
 
+.navbar-links {
+display: flex;
+gap: 20px;
+}
 
 .toggle-button {
     position: absolute;
@@ -77,7 +66,6 @@ header {
     display: none !important;
 }
 
-    
 
 @media (max-width: 1000px) {
     .navbar {
@@ -93,32 +81,11 @@ header {
     .navbar-links {
         display: none;
         width: 100%;
+        & .tel{
+            color: black !important;
+            font-size: 18px;
+        }
     }
-
-    .navbar-links ul {
-        transition: $transition-time;
-        position: fixed;
-        background: whitesmoke;
-        left: 0;
-        top: 0;
-        width: 75%;
-        height: 100%;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    padding: 20px 0;
-
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .home{
-    padding-top: 70px !important;
-}
 }
 
 .navbar-shrink {
@@ -145,3 +112,30 @@ transform: rotate(-45deg) translate(-8px)
     .index{
         z-index: -99999 !important;
     }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        &__item{
+            font-size: 12px;
+        }
+        &:hover{
+            &__item{
+                transform: rotate(180deg);
+            }
+        }
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }

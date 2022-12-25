@@ -14,27 +14,37 @@
 
 <body>
     <header id="navbar">
-        <div class="container-sm">
-          <nav class="navbar">
-            <div class="brand-title">Portfolio Creator</div>
-            <div class="toggle-button">
-              <span class="bar bar3"></span>
-              <span class="bar bars1"></span>
-              <span class="bar bars2"></span>
-            </div>
-            <div class="navbar-links">
-              <ul class="ul">
-                <li class="home"><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonial">Testmonial</a></li>
-              </ul>
-            </div>
-          </nav>
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <a href="#"><img src="./images/Logo.svg" alt="Logo"></a>
+                    <ul class="navbar__left__ul">
+                        <li class="home"><a href="#categories">Categories</a></li>
+                        <div class="dropdown">
+                            <a href="#">About Us <span class="dropdown__item">v</a>
+                            <div class="dropdown-content">
+                            <p>Hello World!</p>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <a href="#">Mouse over me</a>
+                            <div class="dropdown-content">
+                            <p>Hello World!</p>
+                            </div>
+                          </div>
+                    </ul>
+                </div>
+                <div class="toggle-button">
+                    <span class="bar bar3"></span>
+                    <span class="bar bars1"></span>
+                    <span class="bar bars2"></span>
+                </div>
+                <div class="navbar-links">
+          <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+                </div>
+            </nav>
         </div>
-      </header>
+    </header>
     <main>
         <section id="hero_section">
             <div class="container">
@@ -63,7 +73,7 @@
         </section>
     </main>
 
-    
+
     <footer>
 
     </footer>
@@ -78,23 +88,23 @@
 
     <script>
         // Hamburger menu toggle
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const bar3 = document.querySelector(".bar3")
-const bars1 = document.querySelector(".bars1")
-const bars2 = document.querySelector(".bars2")
-const zIndex = document.querySelectorAll(".edu")
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        const bar3 = document.querySelector(".bar3")
+        const bars1 = document.querySelector(".bars1")
+        const bars2 = document.querySelector(".bars2")
+        const zIndex = document.querySelectorAll(".edu")
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-  bar3.classList.toggle('dn')
-  bars1.classList.toggle('brs1')
-  bars2.classList.toggle('brs2')
-  toggleButton.classList.toggle('right')
-  for(i of zIndex){
-    i.classList.toggle('index')
-  }
-})
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            bar3.classList.toggle('dn')
+            bars1.classList.toggle('brs1')
+            bars2.classList.toggle('brs2')
+            toggleButton.classList.toggle('right')
+            for (i of zIndex) {
+                i.classList.toggle('index')
+            }
+        })
     </script>
 </body>
 

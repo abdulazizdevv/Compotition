@@ -5,7 +5,6 @@
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -30,13 +29,6 @@
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-<<<<<<< HEAD
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-=======
->>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
   transform: translate3d(0, 0, 0);
 }
 

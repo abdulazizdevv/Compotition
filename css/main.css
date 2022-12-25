@@ -4,9 +4,6 @@
 }
 * {
   margin: 0;
-<<<<<<< HEAD
-  box-sizing: border-box;
-=======
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -18,7 +15,6 @@ li {
 
 a {
   text-decoration: none;
->>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
 }
 
 .container {
@@ -43,30 +39,27 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.brand-title {
-  font-size: 22px;
-  font-weight: 700;
-  padding: 25px;
-}
-
-.navbar-links ul {
+.navbar__left {
   display: flex;
-  padding: 0;
+  align-items: center;
+  gap: 36px;
 }
-.navbar-links ul li {
-  list-style: none;
-  padding: 0 25px;
+.navbar__left__ul {
+  display: flex;
 }
-.navbar-links ul li a {
-  transition: 0.5s !important;
-  color: dimgray;
-}
-.navbar-links ul li a:hover {
+.navbar__left__ul a {
   color: black;
-  font-size: 17px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid black;
+  font-size: 18px;
+  border-radius: 100px;
+  padding: 16px 18px;
+}
+.navbar__left__ul a:hover {
+  background: #F5F5F5;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
 }
 
 .toggle-button {
@@ -111,26 +104,9 @@ header {
     display: none;
     width: 100%;
   }
-  .navbar-links ul {
-    transition: 0.5s;
-    position: fixed;
-    background: whitesmoke;
-    left: 0;
-    top: 0;
-    width: 75%;
-    height: 100%;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-  .navbar-links ul li {
-    text-align: center;
-    padding: 20px 0;
-  }
-  .navbar-links.active {
-    display: flex;
-  }
-  .home {
-    padding-top: 70px !important;
+  .navbar-links .tel {
+    color: black !important;
+    font-size: 18px;
   }
 }
 .navbar-shrink {
@@ -156,6 +132,31 @@ header {
   z-index: -99999 !important;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown__item {
+  font-size: 12px;
+}
+.dropdown:hover__item {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media screen and (max-width: 450px) {
   .container {
     max-width: 390px !important;
@@ -163,6 +164,63 @@ header {
     padding: 0 16px !important;
   }
 }
+.corusel_slik-div {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/Malibu.png);
+  background-size: cover;
+  background-position: center;
+}
+.corusel_slik-div h3 {
+  padding-top: 60px;
+  height: 44px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-bottom: 10px;
+}
+.corusel_slik-div p {
+  height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding-top: 10px;
+}
+
+.hero_bg-line {
+  background: linear-gradient(180deg, rgba(189, 33, 33, 0.6) 6.19%, rgba(148, 27, 27, 0) 54.63%);
+}
+
+.corusel_bg2 {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/sportcarHero.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.corusel_bg3 {
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(../images/vanscarHero.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .search__input {
   width: 600px;
   height: 66px;
@@ -172,15 +230,6 @@ header {
   outline: none;
   border: none;
 }
-<<<<<<< HEAD
-
-@media screen and (max-width: 450px) {
-  .container {
-    max-width: 390px !important;
-    width: 100% !important;
-    padding: 0 16px !important;
-  }
-=======
 .search::-moz-placeholder {
   margin-left: 30px;
 }
@@ -189,5 +238,4 @@ header {
 }
 .search::placeholder {
   margin-left: 30px;
->>>>>>> e47978e17b24ba61b73d84de3e583a727b8af0cd
 }/*# sourceMappingURL=main.css.map */
