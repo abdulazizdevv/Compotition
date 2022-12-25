@@ -329,11 +329,91 @@ header {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1070px) {
-  .container {
-    max-width: 880px !important;
-    width: 100% !important;
-    padding: 0 20px !important;
+@media screen and (max-width: 1340px) {
+  .cards__service {
+    margin-top: 160px;
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+  }
+  .cards p {
+    max-width: 684px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+  }
+  .cards__all {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .cards__all__one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 590px;
+    height: 216px;
+    background: #f5f5f5;
+    border-radius: 20px;
+  }
+  .cards__all__one:hover {
+    background-color: #299764 !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .cards__all__one:hover p {
+    color: white;
+  }
+  .cards__all__one:hover .icons {
+    -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+            filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+  }
+  .cards__all__one .book {
+    width: 287px;
+    height: 78px;
+    margin-left: 32px;
+    padding-top: 40px;
+    text-align: left;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+  }
+  .cards__all__one .Complete {
+    max-width: 354px;
+    height: 48px;
+    margin-left: 32px;
+    margin-top: 50px;
+    text-align: left;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+  }
+  .cards__all__one .icons {
+    margin-top: 50px;
+    margin-right: 45px;
+    width: 50px;
+    height: 42px;
   }
 }
 
@@ -345,11 +425,148 @@ header {
   }
 }
 
+@media screen and (max-width: 660px) {
+  .cards__all__one {
+    max-width: 400px !important;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .container {
-    max-width: 400px !important;
+    max-width: 430px !important;
     width: 100% !important;
     padding: 0 16px !important;
+  }
+  .cards__all__one {
+    width: 358px !important;
+  }
+  .Complete {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    margin: 50px 20px !important;
+    color: #555555;
+  }
+  .book {
+    margin: 0px 20px !important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+  }
+  .icons {
+    margin-right: 25px !important;
+    width: 33px !important;
+    height: 28px !important;
+  }
+  .big {
+    margin-top: 100px !important;
+    height: 752px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 160px;
+    width: 358px;
+    margin: 0 auto !important;
+    background: #ffffff;
+    border: 1.5px solid #e5e7ea;
+    border-radius: 20px;
+  }
+  .big__txt {
+    margin: 24px 18px !important;
+  }
+  .big__txt .car {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .big__txt .text {
+    width: 321px;
+    height: 120px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+    color: #555555;
+  }
+  .big__txt .category {
+    margin-top: 100px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 94px;
+    gap: 10px;
+  }
+  .big__txt .category__box1 {
+    max-width: 200px;
+    height: 160px;
+    background: #f5f5f5;
+    border-radius: 16px;
+  }
+  .big__txt .category__box1:hover {
+    background-color: #299764 !important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .big__txt .category__box1:hover p {
+    color: white;
+  }
+  .big__txt .category__box1:hover .chemical {
+    -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+            filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+  }
+  .big__txt .category__box1 .every {
+    margin: 30px 15px;
+  }
+  .big__txt .category__box1 .chemical {
+    margin-top: 24px;
+    margin-left: 156px;
+  }
+  .big__txt .category__box1 .alls {
+    margin-top: 56px;
+  }
+  .big__txt .category__box1 .we {
+    margin-top: 32px;
+  }
+  .big .ellips {
+    margin-top: 30px;
+    background-image: url("../../images/Ellipse.png");
+    background-size: cover;
+    background-size: 300px 300px;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+  }
+  .big .ellips .master {
+    margin-right: 70px;
+    margin-top: 20px;
+  }
+  .master {
+    display: none;
+  }
+  .category__box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 318px !important;
+    height: 128px !important;
   }
   .btn2 {
     font-size: 10px;
@@ -491,7 +708,6 @@ header {
 .card {
   max-width: 387px;
   height: 433px;
-  margin-bottom: 20px;
   background: #f5f5f5;
   border-radius: 16px;
 }
@@ -517,13 +733,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .view {
+  margin-top: 40px;
   padding: 18px 30px;
   width: 173px;
   height: 58px;
@@ -561,5 +780,182 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #555555;
+}
+
+.cards__all {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.cards__all__one {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 590px;
+  height: 216px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+
+.cards__all__one:hover {
+  background-color: #299764 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards__all__one:hover p {
+  color: white;
+}
+
+.cards__all__one:hover .icons {
+  -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+          filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+}
+
+.cards__all__one .book {
+  width: 287px;
+  height: 78px;
+  margin-left: 32px;
+  padding-top: 40px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.cards__all__one .Complete {
+  max-width: 354px;
+  height: 48px;
+  margin-left: 32px;
+  margin-top: 50px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.cards__all__one .icons {
+  margin-top: 50px;
+  margin-right: 45px;
+  width: 50px;
+  height: 42px;
+}
+
+.big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 160px;
+  max-width: 1200px;
+  height: 500px;
+  background: #ffffff;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 20px;
+}
+
+.big__txt {
+  margin: 40px 32px;
+}
+
+.big__txt .car {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.big__txt .text {
+  max-width: 590px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.big__txt .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 94px;
+  gap: 10px;
+}
+
+.big__txt .category__box1 {
+  max-width: 200px;
+  height: 160px;
+  background: #f5f5f5;
+  border-radius: 16px;
+}
+
+.big__txt .category__box1:hover {
+  background-color: #299764 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.big__txt .category__box1:hover p {
+  color: white;
+}
+
+.big__txt .category__box1:hover .chemical {
+  -webkit-filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+          filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg) brightness(500%) contrast(107%);
+}
+
+.big__txt .category__box1 .every {
+  margin: 30px 15px;
+}
+
+.big__txt .category__box1 .chemical {
+  margin-top: 24px;
+  margin-left: 156px;
+}
+
+.big__txt .category__box1 .alls {
+  margin-top: 56px;
+}
+
+.big__txt .category__box1 .we {
+  margin-top: 32px;
+}
+
+.big .ellips {
+  margin-top: 30px;
+  background-image: url("../../images/Ellipse.png");
+  background-size: cover;
+  background-size: 300px 300px;
+  background-position-x: 50px;
+  background-repeat: no-repeat;
+}
+
+.big .ellips .master {
+  margin-right: 70px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -48,7 +48,7 @@
 .card {
   max-width: 387px;
   height: 433px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   background: #f5f5f5;
   border-radius: 16px;
   // margin-left: 20px;
@@ -67,14 +67,14 @@
     }
   }
 }
-.cars {
-  &__List {
+  .cars__List {
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
 .view {
+  margin-top: 40px;
   padding: 18px 30px;
   width: 173px;
   height: 58px;
@@ -112,14 +112,17 @@
     color: #555555;
   }
   &__all {
+ 
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     &__one {
+      margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
-      width: 590px;
+      width: 590px ;
       height: 216px;
       background: #f5f5f5;
       border-radius: 20px;
@@ -166,6 +169,85 @@
         width: 50px;
         height: 42px;
       }
+    }
+  }
+}
+.big {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 160px;
+  max-width: 1200px;
+  height: 500px;
+  background: #ffffff;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 20px;
+
+  &__txt {
+    margin: 40px 32px;
+    .car {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #000000;
+    }
+    .text {
+      max-width: 590px;
+      
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+    }
+    .category {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 94px;
+      gap: 10px;
+      &__box1 {
+        &:hover {
+          background-color: #299764 !important;
+          transition: $transition-time;
+          p {
+            color: white;
+          }
+          .chemical {
+            filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(357deg)
+              brightness(500%) contrast(107%);
+          }
+        }
+        max-width: 200px;
+        height: 160px;
+        background: #f5f5f5;
+        border-radius: 16px;
+        .every {
+          margin: 30px 15px;
+        }
+        .chemical {
+          margin-top: 24px;
+          margin-left: 156px;
+        }
+        .alls {
+          margin-top: 56px;
+        }
+        .we {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+  .ellips {
+    margin-top: 30px;
+    background-image: url("../../images/Ellipse.png");
+    background-size: cover;
+    background-size: 300px 300px;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+    .master {
+      margin-right: 70px;
+      margin-top: 20px;
     }
   }
 }

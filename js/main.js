@@ -28,35 +28,37 @@ function renderCars(cars) {
   let res = "";
   for (i of cars) {
     res += `
-    <div class="card" background-color: #F5F5F5; ">
-    <div style="margin-left:24px; padding-top:30px;">
+    <div class="card" style=" background-color: #F5F5F5; ">
+    <div style=" margin-left:24px; padding-top:30px;">
         <h3 class="card-title">${i.name}</h3>
         <p style="margin-top:8px;" class="card-text">${i.type}</p>
     </div>
     <img src="${i.img}" class="card-img-top" alt="car">
 
     <div style="display: flex; justify-content: space-between;">
-        <div style="display: flex;">
-            <img style="margin-left: 27px; width:13px; height:14px;" src="${i.imgSite}" class="card-img" alt="car">
-            <p style="margin-left: 14px;">5 Seats</p>
-        </div>
-        <div style="display: flex;margin-right: 89px; ">
-            <img src="${i.imgAuto}" class="card-img" alt="car">
-            <p style="margin-left: 12px; margin-right:8px;">Automatic</p>
-        </div>
-    </div>
+      <div style="display: flex;">
+          <img style="margin-left: 27px; width:13px; height:14px;" src="${i.imgSite}"
+              class="card-img" alt="car">
+          <p style="margin-left: 14px;">5 Seats</p>
+      </div>
+      <div style="display: flex;margin-right: 89px; ">
+          <img src="${i.imgAuto}" class="card-img" alt="car">
+          <p style="margin-left: 12px; margin-right:8px;">Automatic</p>
+      </div>
+  </div>
 
-    <div style="display: flex; justify-content: space-between;margin-top:24px;">
-        <div style="display: flex;">
-            <img style="margin-left: 27px;" src="${i.imgYears}" class="card-img" alt="car">
-            <p style="margin-left: 14px;">21+ Years</p>
-        </div>
-        <div style="display: flex;margin-right: 89px; ">
-            <img style="width:10.5; height:13.5px;" src="${i.imgOil}" class="card-img" alt="car">
-            <p style="margin-left: 14px; ">1-lit / 2.5 km</p>
-        </div>
-    </div>
+  <div style="display: flex; justify-content: space-between;margin-top:24px;">
+      <div style="display: flex;">
+          <img style="margin-left: 27px;" src="${i.imgYears}" class="card-img" alt="car">
+          <p style="margin-left: 14px;">21+ Years</p>
+      </div>
+      <div style="display: flex;margin-right: 89px; ">
+          <img style="width:10.5; height:13.5px;" src="${i.imgOil}" class="card-img" alt="car">
+          <p style="margin-left: 14px; ">1-lit / 2.5 km</p>
+      </div>
+  </div>
 </div>
+    
         `;
   }
 
