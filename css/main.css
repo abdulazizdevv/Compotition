@@ -1,18 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
-
-.container {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 120px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -26,3 +24,21 @@ a {
     padding: 0 16px !important;
   }
 }
+.search__input {
+  width: 600px;
+  height: 66px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  outline: none;
+  border: none;
+}
+.search::-moz-placeholder {
+  margin-left: 30px;
+}
+.search:-ms-input-placeholder {
+  margin-left: 30px;
+}
+.search::placeholder {
+  margin-left: 30px;
+}/*# sourceMappingURL=main.css.map */
