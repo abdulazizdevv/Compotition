@@ -24,6 +24,19 @@ a {
   padding: 0 120px;
 }
 
+.btn1 {
+  background: #299764;
+  padding: 18px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 header {
   top: 0;
   background: #fff;
@@ -52,6 +65,7 @@ header {
   font-size: 18px;
   border-radius: 100px;
   padding: 16px 18px;
+  transition: 0.5s;
 }
 .navbar__left__ul a:hover {
   background: #F5F5F5;
@@ -60,6 +74,7 @@ header {
 .navbar-links {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .toggle-button {
@@ -103,10 +118,6 @@ header {
   .navbar-links {
     display: none;
     width: 100%;
-  }
-  .navbar-links .tel {
-    color: black !important;
-    font-size: 18px;
   }
 }
 .navbar-shrink {
@@ -155,6 +166,33 @@ header {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.tel {
+  color: black !important;
+  font-size: 18px;
+}
+
+.dark-light {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dark-light:hover img {
+  filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(111%) contrast(100%);
+  transition: 0.5s;
+}
+.dark-light:active {
+  background: #299764;
+}
+.dark-light:active img {
+  filter: invert(100%) sepia(79%) saturate(2%) hue-rotate(131deg) brightness(127%) contrast(100%);
+  fill: #fff;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 450px) {
@@ -221,21 +259,62 @@ header {
   background-position: center;
 }
 
-.search__input {
-  width: 600px;
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 10px;
+  max-width: 600px;
+  width: 100%;
   height: 66px;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 100px;
+}
+.search__form__icon {
+  cursor: pointer;
+}
+.search__form__input {
   outline: none;
+  margin-left: 30px;
   border: none;
+  padding: 20px;
+  width: 100%;
 }
-.search::-moz-placeholder {
-  margin-left: 30px;
+.search__form ::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
 }
-.search:-ms-input-placeholder {
-  margin-left: 30px;
+
+.choose {
+  margin-top: 110px;
+  text-align: center;
 }
-.search::placeholder {
-  margin-left: 30px;
+
+.choose-down {
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 387px;
+  height: 433px;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  border-radius: 16px;
+}
+
+.cars__List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */
