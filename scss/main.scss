@@ -12,10 +12,6 @@
 @import "./layout/footer";
 @import "./layout/forms";
 @import "./layout/header";
-@import "./layout/navigation";
-@import "./layout/sidebar";
-
-@import "./themes/theme";
 
 @import "./sections/chooseCar";
 @import "./sections/communityCarousel";
@@ -24,4 +20,13 @@
 @import "./sections/project";
 @import "./sections/service";
 
+@import "./media/media\(1600px\)";
+@import "./media/media\(1200px\)";
+@import "./media/media\(960px\)";
+@import "./media/media\(760px\)";
+@import "./media/media\(480px\)";
+@import "./media/media\(320px\)";
 
+@import "./pages/home.scss";
+@import "./pages/index-one.scss";
+@import "./pages/index-two.scss";
