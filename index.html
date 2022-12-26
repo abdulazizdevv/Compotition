@@ -16,7 +16,7 @@
 <body>
     <div class="loader_bg">
         <div class="loader"></div>
-      </div>
+    </div>
     <header id="navbar">
         <div class="container">
             <nav class="navbar">
@@ -46,6 +46,65 @@
                     <span class="bar bars1"></span>
                     <span class="bar bars2"></span>
                 </div>
+                <div class="navbar-mobile">
+                    <div class="navbar-mobile__header">
+                        <a href="#"><img src="./images/Logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="navbar-mobile__body">
+                        <div class="mobile-first">
+                            <a class="h3" href="#">Categories</a>
+                        </div>
+                        <div class="mobile-second">
+                            <a class="h3" href="#">About Us</a>
+                            <a class="inner" href="#">News</a>
+                            <a class="inner" href="#">Careers</a>
+                            <a class="inner" href="#">Locations</a>
+                        </div>
+                        <div class="mobile-third">
+                            <a class="h3" href="#">Categories</a>
+                            <a class="inner" href="#">FAQ</a>
+                            <a class="inner" href="#">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="navbar-mobile__footer">
+                        <div class="mobile-footer-items">
+                            <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
+                            <button class="dark-light">
+                                <img class="moon" src="./images/moon.svg" alt="moon" />
+                            </button>
+                            <button id="myBtn" class="btn1">
+                                Login <img src="./images/Login.png" alt="login" />
+                            </button>
+        
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <h3 class="modal__title">Login</h3>
+                                    <p class="modal__desc">
+                                        Use the email and password that you login
+                                    </p>
+                                    <form class="form" action="https://echo.htmlacademy.ru/ " method="post" target="_blank">
+                                        <input class="input input1" required type="email" name="email" id="email"
+                                            placeholder="Email" />
+                                        <div class="password">
+                                            <input class="input input2" type="password" name="password" id="password"
+                                                placeholder="Password" />
+                                            <img src="./images/Eye.png" alt="show" id="togglePassword" />
+                                        </div>
+                                        <div>
+                                            <a class="forgot" href="#">Forgot password</a>
+                                            <a class="create" href="#">I want to create an account</a>
+                                            <button type="submit" class="btn1 login">
+                                                Login<img src="./images/Login.png" alt="login" />
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="navbar-links">
                     <a class="tel" href="tel:+1 855 420 0000">+1 855 420 0000</a>
                     <button class="dark-light">
@@ -54,9 +113,7 @@
                     <button id="myBtn" class="btn1">
                         Login <img src="./images/Login.png" alt="login" />
                     </button>
-                    <div class="navbar-mobile">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus impedit quidem maiores sapiente error necessitatibus ratione quae dolorem. Vitae, corrupti? Animi, quae accusantium ipsam consectetur ab placeat pariatur iusto labore optio quos distinctio necessitatibus officia dolore eveniet ea maiores? Rerum quisquam error labore cupiditate, eaque aut ducimus sit fugit voluptatum.
-                    </div>
+
                     <div id="myModal" class="modal">
                         <!-- Modal content -->
                         <div class="modal-content">
@@ -71,7 +128,7 @@
                                 <div class="password">
                                     <input class="input input2" type="password" name="password" id="password"
                                         placeholder="Password" />
-                                    <img src="./images/Eye.png" alt="show" id="togglePassword"/>
+                                    <img src="./images/Eye.png" alt="show" id="togglePassword" />
                                 </div>
                                 <div>
                                     <a class="forgot" href="#">Forgot password</a>
@@ -340,15 +397,18 @@
                             practiced in our operations.</p>
                         <div class="category">
                             <div class="category__box1">
-                                <img class="chemical" src="./images/chemical/Solid/General/Icon.png" alt="icon" width="24" height="24">
+                                <img class="chemical" src="./images/chemical/Solid/General/Icon.png" alt="icon"
+                                    width="24" height="24">
                                 <p class="every">Every car is thoroughly sanitized and cleaned</p>
                             </div>
                             <div class="category__box1">
-                                <img class="chemical" src="./images/heart/Solid/Status/Icon.png" alt="icon" width="24" height="24">
+                                <img class="chemical" src="./images/heart/Solid/Status/Icon.png" alt="icon" width="24"
+                                    height="24">
                                 <p class="every alls">All of our employees wear masks</p>
                             </div>
                             <div class="category__box1">
-                                <img class="chemical" src="./images/lock/Solid/Files/Icon.png" alt="icon" width="24" height="24">
+                                <img class="chemical" src="./images/lock/Solid/Files/Icon.png" alt="icon" width="24"
+                                    height="24">
                                 <p class="every we">We stay up to date with all protocol from the CDC</p>
                             </div>
                         </div>
@@ -420,16 +480,20 @@
                         <div class="socials">
                             <h3>Social network</h3>
                             <div class="social">
-                                <a class="social__item first" href="#" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
-                                <a class="social__item second" href="#" target="_blank"><img src="./images/twitter.png" alt="twittet"></a>
-                                <a class="social__item third" href="#" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
-                                <a class="social__item fourth" href="#" target="_blank"><img src="./images/whatsapp.png" alt="whatsapp"></a>
+                                <a class="social__item first" href="#" target="_blank"><img src="./images/instagram.png"
+                                        alt="instagram"></a>
+                                <a class="social__item second" href="#" target="_blank"><img src="./images/twitter.png"
+                                        alt="twittet"></a>
+                                <a class="social__item third" href="#" target="_blank"><img src="./images/facebook.png"
+                                        alt="facebook"></a>
+                                <a class="social__item fourth" href="#" target="_blank"><img src="./images/whatsapp.png"
+                                        alt="whatsapp"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -437,7 +501,7 @@
     <script src="./js/corusel.js"></script>
     <script src="./js/cars.js"></script>
     <script src="./js/main.js"></script>
-    
+
 </body>
 
 </html>

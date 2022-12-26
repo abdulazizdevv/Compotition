@@ -248,13 +248,16 @@ function vanish() {
   const bars2 = document.querySelector(".bars2");
 
   toggleButton.addEventListener("click", () => {
-      navbarLinks.style.display = "flex"
       bar3.classList.toggle("dn");
       bars1.classList.toggle("brs1");
       bars2.classList.toggle("brs2");
       toggleButton.classList.toggle("right");
       toggleButton.classList.toggle("close-toggle");
+      navbarLinks.classList.toggle("df")
   });
+if(navbarLinks.classList !="df"){
+  navbarLinks.classList.add("dn")
+}
 
   var modal = document.getElementById("myModal");
 
