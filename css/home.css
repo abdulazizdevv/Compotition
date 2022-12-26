@@ -401,7 +401,6 @@
 .instagram_div button:hover {
   background: radial-gradient(230.93% 230.93% at 102.01% 2.03%, #f9ed32 0%, #ee2a7b 36%, #d22a8a 44%, #8b2ab2 60%, #1b2af0 83%, #002aff 88%);
   color: #fff !important;
-  z-index: 999;
 }
 
 .comumunity_carusel-container {
@@ -592,7 +591,7 @@
     color: #000000;
   }
   .corusel__line {
-    margin-top: 65px;
+    margin-top: 65px !important;
     max-width: 300px;
     height: 0px;
     border: 1.5px solid #e5e7ea;
