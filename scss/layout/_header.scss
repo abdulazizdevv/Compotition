@@ -313,6 +313,6 @@ z-index: 999 !important;
 
 .btn img {
 content: url(../../images/sun.svg) !important;
-width: 20px;
-height: 20px
+filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%);
+
 }
