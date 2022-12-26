@@ -20,8 +20,10 @@ elBtns.addEventListener("click", (evt) => {
 let newTheme = () => {
   if (window.localStorage.getItem("theme") == "dark") {
     document.body.classList.add("dark");
+    elBtns.classList.add("btn")
   } else {
     document.body.classList.remove("dark");
+    elBtns.classList.remove("btn");
   }
 };
 
@@ -224,3 +226,95 @@ elAllBtns.addEventListener("click", (evt) => {
 //     elVans.classList.remove("active");
 //   }
 // });
+
+
+setTimeout(function () {
+  $(".loader_bg").fadeToggle();
+}, 3000);
+
+var loader = document.querySelector(".loader");
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("dissapear");
+}
+
+  // Hamburger menu toggle
+  const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  const navbarLinks = document.getElementsByClassName("navbar-mobile")[0];
+  const bar3 = document.querySelector(".bar3");
+  const bars1 = document.querySelector(".bars1");
+  const bars2 = document.querySelector(".bars2");
+
+  toggleButton.addEventListener("click", () => {
+      navbarLinks.style.display = "flex"
+      bar3.classList.toggle("dn");
+      bars1.classList.toggle("brs1");
+      bars2.classList.toggle("brs2");
+      toggleButton.classList.toggle("right");
+      toggleButton.classList.toggle("close-toggle");
+  });
+
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+      modal.style.display = "block";
+  };
+
+  span.onclick = function () {
+      modal.style.display = "none";
+      input = document.querySelectorAll(".input");
+      input.forEach((el) => {
+          el.classList.add("pl");
+          el.value = "";
+      });
+  };
+
+  const input = document.querySelectorAll(".input");
+  const loginBtn = document.querySelector(".login");
+  const input2 = document.querySelectorAll(".input2");
+
+  input.forEach((el) => {
+      el.classList.add("pl");
+  });
+  loginBtn.addEventListener("click", () => {
+      if (input2.value <= 8) {
+          window.alert("kam");
+          loginBtn.style.display = "none";
+      }
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  };
+
+  const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#password");
+
+  togglePassword.addEventListener("click", function () {
+      const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+      this.classList.toggle("bi-eye");
+  });
+
+  // Navbar Shrink
+  window.onscroll = function () {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      if (document.documentElement.scrollTop > 150) {
+          document.getElementById("navbar").classList.add("navbar-shrink");
+      } else {
+          document.getElementById("navbar").classList.remove("navbar-shrink");
+      }
+  }
