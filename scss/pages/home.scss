@@ -490,7 +490,7 @@
 }
 
 .com__carusel-pr {
-  width: 372px;
+  max-width: 372px;
   height: 160px;
   left: 24px;
   top: 80px;
@@ -504,7 +504,7 @@
 
 .corusel__line {
   margin-top: 25px;
-  width: 372px;
+  max-width: 372px;
   height: 0px;
   border: 1.5px solid #e5e7ea;
 }

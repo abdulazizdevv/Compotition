@@ -2,7 +2,7 @@ $('.corusel_sliks-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     dots: true,
   });
 
@@ -20,7 +20,7 @@ $('.corusel_sliks-container').slick({
   $('.project__corusel_toleft').slick({
     autoplay:true,
     infinite:true,
-    autoplaySpeed:0,
+    autoplaySpeed:1,
     slidesToScroll:1,
     slidesToShow:5,
     arrows:false,
@@ -28,6 +28,19 @@ $('.corusel_sliks-container').slick({
     speed:1000,
     initialSlide:1,
     draggable:false,
-    //  rtl:true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
  
