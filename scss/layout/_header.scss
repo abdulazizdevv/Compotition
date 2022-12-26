@@ -76,22 +76,6 @@ header {
     display: none !important;
 }
 
-@media (max-width: 1000px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex !important;
-        cursor: pointer;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-}
 
 .navbar-shrink {
     box-shadow: 0 0 5px rgb(68, 68, 68) !important;
@@ -120,9 +104,6 @@ header {
     }
 }
 
-.index {
-    z-index: -99999 !important;
-}
 
 .tel {
     color: black !important;
@@ -165,9 +146,7 @@ header {
     top: 20px;
 }
 
-.active {
-    display: flex;
-}
+
 
 .modal {
     display: none;
@@ -223,8 +202,8 @@ header {
     border-radius: 82px;
 
     & img {
-        position: absolute;
-        right: 65px;
+        position: relative;
+        right: 25px;
     }
 
     & .input {
@@ -260,23 +239,24 @@ header {
     padding-right: 20px;
 }
 
-.create{
-font-weight: 500;
-font-size: 16px;
-text-align: center;
-color: #000000;
-display: block;
-padding-top: 26px;
-padding-bottom: 32px;
+.create {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 32px;
 }
 
-.login{
+.login {
     min-width: 520px !important;
     width: 100%;
-     display: flex;
-     justify-content: center;
-     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
+
 .close {
     color: #aaaaaa;
     float: right;
@@ -296,4 +276,96 @@ padding-bottom: 32px;
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.navbar-mobile {
+    display: none;
+    padding-left: 30px;
+
+    &__header {
+        padding-top: 45px;
+        padding-bottom: 55px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        & .mobile-second,
+        .mobile-third {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            & .inner {
+                font-weight: 500;
+                font-size: 18px;
+                color: #555555;
+            }
+        }
+
+        & .h3 {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 34px;
+            color: #000000;
+        }
+    }
+    &__footer{
+        position: fixed;
+        bottom: 0;
+        & .mobile-footer-items{
+            display: flex;
+            align-items: center;
+           & a{
+            padding-right: 70px;
+           }
+           & button{
+            margin-left: 30px;
+           }
+           & #myBtn{
+         padding: 18px 40px;
+           }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex !important;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        display: none;
+        // width: 100%;
+    }
+
+    .df {
+        display: flex;
+        flex-direction: column;
+        z-index: 99999999 !important;
+        width: 75%;
+        background: #FFFFFF;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 999 !important;
+    }
+}
+
+
+
+
+.btn img {
+    content: url(../../images/sun.svg) !important;
+    filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(357deg) brightness(11%) contrast(100%);
 }

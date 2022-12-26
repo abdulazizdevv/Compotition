@@ -25,7 +25,7 @@ $('.corusel_sliks-container').slick({
     slidesToShow:5,
     arrows:false,
     cssEase:'linear',
-    speed:1000,
+    speed:2000,
     initialSlide:1,
     draggable:false,
     responsive: [
@@ -38,7 +38,7 @@ $('.corusel_sliks-container').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1
         }
       }
     ]
